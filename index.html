@@ -10,7 +10,6 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -367,27 +366,28 @@
       font-size: 0.9em;
       line-height: 1.6;
     }
+    
   </style>
 </head>
 <body>
-  <div class="App">
-    <div class="container">
+  <div className="App">
+    <div className="container">
       
       <!-- ========== ЭКРАН АВТОРИЗАЦИИ ========== -->
       <!-- Показывать когда user === null -->
       
       <h1>🎮 Кликер Игра</h1>
-      <p class="subtitle">Демонстрация CSRF + CORS + Sessions</p>
+      <p className="subtitle">Демонстрация CSRF + CORS + Sessions</p>
 
       <!-- Сообщение об ошибке (показывать при наличии) -->
-      <div class="error" style="display: none;">
+      <div className="error" style="display: none;">
         Текст ошибки
       </div>
 
       <!-- Формы регистрации и входа -->
-      <div class="forms">
+      <div className="forms">
         <!-- Форма регистрации -->
-        <div class="form-card">
+        <div className="form-card">
           <h2>Регистрация</h2>
           <form>
             <input type="text" placeholder="Имя пользователя" required />
@@ -397,7 +397,7 @@
         </div>
 
         <!-- Форма входа -->
-        <div class="form-card">
+        <div className="form-card">
           <h2>Вход</h2>
           <form>
             <input type="text" placeholder="Имя пользователя" required />
@@ -413,58 +413,10 @@
   <!-- Показывать когда user !== null -->
   <!-- Раскомментируйте этот блок, чтобы увидеть игровой экран -->
   
-  <div class="App">
-    <div class="container">
-      
-      <div class="header">
-        <h1>🎮 Кликер Игра</h1>
-        <div class="user-info">
-          <span><strong>Имя пользователя</strong></span>
-          <button class="logout-btn">Выйти</button>
-        </div>
-      </div>
-
-      <div class="error" style="display: none;">
-        Текст ошибки
-      </div>
-
-      <div class="game-area">
-        
-        <div class="click-counter">
-          <h2>Твои клики</h2>
-          <div class="clicks-display">42</div>
-          <button class="click-button">👆 КЛИКНИ!</button>
-        </div>
-
-        <div class="leaderboard">
-          <h2>🏆 Топ-10 игроков</h2>
-          <ol>
-            <li>
-              <span class="rank">#1</span>
-              <span class="username">bob</span>
-              <span class="score">200 кликов</span>
-            </li>
-            <li>
-              <span class="rank">#2</span>
-              <span class="username">alice</span>
-              <span class="score">150 кликов</span>
-            </li>
-            <li class="current-user">
-              <span class="rank">#3</span>
-              <span class="username">you</span>
-              <span class="score">42 клика</span>
-            </li>
-            <li>
-              <span class="rank">#4</span>
-              <span class="username">charlie</span>
-              <span class="score">75 кликов</span>
-            </li>
-          </ol>
-        </div>
-
-      </div>
-    </div>
+  <div className="App">
+    
   </div>
 
 </body>
 </html>
+
